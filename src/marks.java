@@ -43,7 +43,7 @@ public class marks extends javax.swing.JFrame {
 
         try{
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school","postgres","2515");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school","postgres","amir");
 
         }catch (ClassNotFoundException ex){
             Logger.getLogger(Exam.class.getName()).log(Level.SEVERE, null, ex);

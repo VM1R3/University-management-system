@@ -42,7 +42,7 @@ public class login extends javax.swing.JFrame {
         
         try {
      Class.forName("org.postgresql.Driver");
-     connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school", "postgres", "2515");
+     connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school", "postgres", "amir");
     
 
      if (connection!= null) {
@@ -182,7 +182,7 @@ public class login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        System.exit(1);
+        System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

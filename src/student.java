@@ -46,7 +46,7 @@ public class student extends javax.swing.JFrame {
 
         try{
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school","postgres","2515");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school","postgres","amir");
 
         }catch (ClassNotFoundException ex){
             Logger.getLogger(Exam.class.getName()).log(Level.SEVERE, null, ex);
@@ -150,7 +150,6 @@ public class student extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         txtstname = new javax.swing.JTextField();
         txtpname = new javax.swing.JTextField();
-        txtdob = new com.toedter.calendar.JDateChooser();
         txtgender = new javax.swing.JComboBox<>();
         txtphone = new javax.swing.JTextField();
         txtaddress = new javax.swing.JTextField();
@@ -161,6 +160,7 @@ public class student extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        txtdob = new com.toedter.calendar.JDateChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
@@ -177,7 +177,7 @@ public class student extends javax.swing.JFrame {
 
         jLabel2.setText("Student Name");
 
-        jLabel3.setText("Parent Name");
+        jLabel3.setText("Surname");
 
         jLabel4.setText("Date of Birth");
 
@@ -250,13 +250,13 @@ public class student extends javax.swing.JFrame {
                 .addGap(68, 68, 68)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtgender, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtdob, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtstname)
                     .addComponent(txtpname)
                     .addComponent(txtgroup, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtaddress)
                     .addComponent(txtphone)
-                    .addComponent(txtsection, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtsection, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtdob, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(35, 35, 35))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -286,7 +286,7 @@ public class student extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(txtdob, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(14, 14, 14)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addComponent(txtgender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -325,7 +325,7 @@ public class student extends javax.swing.JFrame {
 
             },
             new String [] {
-                "StID", "StName", "ParentName", "DoB", "Gender", "Phone", "Address", "Group", "Section"
+                "StID", "StName", "Surname", "DoB", "Gender", "Phone", "Address", "Group", "Section"
             }
         ) {
             Class[] types = new Class [] {
