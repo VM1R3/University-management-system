@@ -1,4 +1,4 @@
-
+    
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -45,7 +45,7 @@ public class group extends javax.swing.JFrame {
         
         try {
     Class.forName("org.postgresql.Driver");
-    connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school", "postgres", "amir");
+    connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/school", "postgres", "2515");
     
 
 if (connection!= null) {
